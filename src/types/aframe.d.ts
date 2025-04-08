@@ -1,10 +1,10 @@
-import { ANode } from 'aframe';
+import { ANode, Scene, ComponentDefinition } from 'aframe';
 
 declare global {
   interface Window {
     AFRAME: {
-      scenes: Array<any>;
-      registerComponent: (name: string, component: any) => void;
+      scenes: Array<Scene>;
+      registerComponent: (name: string, component: ComponentDefinition) => void;
     };
   }
 
